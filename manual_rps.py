@@ -1,11 +1,12 @@
 import random
-options = ["rock", "paper", "scissors"]
 
 def get_computer_choice():
+    options = ["rock", "paper", "scissors"]
     computer_selected = random.choice(options)
     return computer_selected
     
 def get_user_choice():
+    options = ["rock", "paper", "scissors"]
     while True:
         user_selected = input("Input: ").lower()
         if user_selected not in options:
