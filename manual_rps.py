@@ -15,7 +15,7 @@ def get_user_choice():
             break
     return user_selected
 
-def get_winner(user_choice, computer_choice):
+def get_winner(computer_choice, user_choice):
     if user_choice == computer_choice:
         print("It is a tie!")
     elif user_choice == "rock" and computer_choice == "scissors":
