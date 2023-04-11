@@ -1,4 +1,5 @@
 import random
+import camera_rps
 
 def get_computer_choice():
     options = ["rock", "paper", "scissors"]
@@ -29,7 +30,7 @@ def get_winner(computer_choice, user_choice):
    
 def play():
     computer_selected = get_computer_choice()
-    user_selected = get_user_choice()
+    user_selected = camera_rps.get_prediction()
     get_winner(user_selected, computer_selected)
     
 play()

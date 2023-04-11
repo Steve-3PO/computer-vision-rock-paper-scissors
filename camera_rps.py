@@ -1,12 +1,17 @@
 import cv2
+import time
 from keras.models import load_model
 import numpy as np
 model = load_model('keras_model.h5')
 cap = cv2.VideoCapture(0)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+hashmap = {0: "rock", 1: "paper", 2: "scissors", 3: "nothing"}
+timeout = 3
+time_start = time.time()
 
 def get_prediction():
-    while True: 
+    while time.time() <= time_start + timeout:
+        test_time = 0 
         ret, frame = cap.read()
         resized_frame = cv2.resize(frame, (224, 224), interpolation = cv2.INTER_AREA)
         image_np = np.array(resized_frame)
@@ -18,16 +23,11 @@ def get_prediction():
         #print(prediction)
         index = np.argmax(prediction[0])
         #print(index)
-        hashmap = {0: "rock", 1: "paper", 2: "scissors", 3: "nothing"}
-        #print(hashmap[index])
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            return index
-            
+            return hashmap[index]
+    print(f"you chose {hashmap[index]}")
+    return hashmap[index]       
     # After the loop release the cap object
     cap.release()
     # Destroy all the windows
     cv2.destroyAllWindows()
-    
-
-index = get_prediction()
-print(index)
