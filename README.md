@@ -56,6 +56,19 @@ IMG - Teachable Machine
 ## M2 - "Install the Dependencies"
 
 ### Create the conda virtual environment
+
+To begin coding the project it is first neccessary to create a virtual environment. Fortunately, this is simple and can be done ussing the following lines of code:
+
+```python
+conda create -n "environment name" python=3.8
+
+conda activate "environment name"
+
+conda install pip
+
+pip install "package name"
+```
+
 ### Package Installation 
 
 
