@@ -71,6 +71,11 @@ pip install "package name"
 
 ### Package Installation 
 
+The packages required are listed below however they are also all listed within the requirements.txt file.
+> - tensorflow
+> - opencv
+> - ipykernel
+> - time
 
 
 
