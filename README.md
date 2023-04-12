@@ -71,12 +71,12 @@ pip install "package name"
 
 ### Package Installation 
 
-The packages required are listed below however they are also all listed within the requirements.txt file.
+The packages required are listed below however they are also all listed within the requirements.txt file. It is important to note that in the case of some packages, these may be included when pip is installed as shown above.
 > - tensorflow
 > - opencv
 > - ipykernel
 > - time
-
+> - numpy
 
 
 ## M3 - "Create a Rock-Paper-Scissors Game"
