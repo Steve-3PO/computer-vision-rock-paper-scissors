@@ -27,7 +27,6 @@
 ### Milestone 3 - "Create a Rock-Paper-Scissors Game"
 > - Get users choice and randomly generate computer's choice
 > - Determine the winner
-> - Simulate the game
 
 ### Milestone 4 - "Use the Camera to play Rock-Paper-Scissors"
 > - Get user prediction with model
@@ -110,13 +109,42 @@ def get_user_choice():
 
 ### Determine the winner
 
+The get_winner() function takes in the outputs of both the computer's and user's choice and determines who won and lost. This can be done in various ways and is a point to come back to when refining the manual code. An interesting method I have yet to try is whether this can be done with a hashmap of user input keys to computer input values, as this would reduce the computation time although for a few simple conditions, this is likely more for good code practise than real practicality. 
 
-### Simulate the game
 
+```python
+def get_winner(computer_choice, user_choice):
+    if user_choice == computer_choice:
+        print("It is a tie!")
+    elif user_choice == "rock" and computer_choice == "scissors":
+        print("You won!")
+    elif user_choice == "paper" and computer_choice == "rock":
+        print("You won!")
+    elif user_choice == "scissors" and computer_choice == "paper":
+        print("You won!")
+    else:
+        print("You lost")
+```
 
 
 ### M4 - "Use the Camera to play Rock-Paper-Scissors"
 
+This milestone will aim to replace the hard coded user input in the previous section with the model prediction. The code for this is contained within the camera_rps.py file. 
+
 ### Get user prediction with model
+
+Unlike the simple nature of the manual input, the prediction carries various conditions to be met one of which is that the image from the webcam must be captured and normalised. The prediction made by the model is an output of type list[list] in the form [[x,y,z,n]]. Each value representing the weighting the model places for which it thinks that it is seeing either rock, paper, scissors or nothing respectively. We can then use numpy's argmax() function to find the maximum of this output list[list] type and a hashmap to grab the corresponding string (rpsn).
+
 ### Initiate countdown
+
+Originally the code used a while loop which the user would quit and produce the output corresponding to the last iteration of the loop. However a more accurate representation of the game is a countdown. This can be achieved using the time library. 
+
+```python
+timeout = 3
+    time_start = time.time()
+    while time.time() <= time_start + timeout:
+```
+
+This code will set a coundown before which the user has a chance to give an answer to the camera, more inline with the nature of the game: "rock...paper...scissors...shoot!"
+
 ### Other additions
