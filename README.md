@@ -3,15 +3,21 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
 ## Overview 
->This project will show how a model can be trained to play Rock, Paper, Scissors with a computer using a webcam to record the user's selection. 
+> This is an implementation of an interactive "Rock Paper Scissors" game in which the user can play with the computer using the camera.
+> This project will show how a model can be trained to play Rock, Paper, Scissors with a computer using a webcam to record the user's selection. 
 > The Model used can be accessed from Teachable-Machine and the download is shown in the repository under the file named keras_model.h5 with the corresponding labels in the labels.txt file.
 
 ## Learning Objectives
+> To create a (small) image database for computer vision tasks.
+> To set up a virtual environment and understand the installation of all required packages.
+> A tool to practice intermediate Python programming - 'if-else' statements, 'while' loops, and object oriented programming.
 
 ## Languages & Tools
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> </p>
 
 ## Project Structure
+
+### Milestone 1
 
 ### Milestone 2
 > The model was trained using over 1000+ pictures for each of the possible inputs: Rock, Paper, Scissors and Nothing, for when there is a lack of input from the user. The model was then downloaded and imported into this repository to begin accessing it. It was tested to make sure it provided a normalised output of what is seen which is given in the form [rrr, ppp, sss, nnn] where each value corresponds to the models assertion that the user has provided either rock, paper, scissors or none. 
