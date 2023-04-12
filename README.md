@@ -33,3 +33,35 @@
 > - Get user prediction with model
 > - Initiate countdown
 > - Other additions
+
+## M1 - Create the computer Vision System
+
+To create our vision system we must first distinguish between the 4 different types of inputs that the system is required to differentiate. Rock, Paper, Scissors and None. It is important to note that none is simply the lack of any input by the user and is itself an input because of this.
+
+### Create the dataset (images) to be used in training the model
+### Create the model using Teachable Machine
+
+
+
+
+## M2 - "Install the Dependencies"
+
+### Create the conda virtual environment
+### Package Installation 
+
+
+
+
+## M3 - "Create a Rock-Paper-Scissors Game"
+
+### Get users choice and randomly generate computer's choice
+### Determine the winner
+### Simulate the game
+
+
+
+### M4 - "Use the Camera to play Rock-Paper-Scissors"
+
+### Get user prediction with model
+### Initiate countdown
+### Other additions
