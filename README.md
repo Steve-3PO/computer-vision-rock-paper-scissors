@@ -38,10 +38,19 @@
 
 To create our vision system we must first distinguish between the 4 different types of inputs that the system is required to differentiate. Rock, Paper, Scissors and None. It is important to note that none is simply the lack of any input by the user and is itself an input because of this.
 
+IMG - rps 
+
 ### Create the dataset (images) to be used in training the model
+
+Although the dataset can be of just hands showering 1 of the 3 possible inputs, it was required that the model was to be trained with the user half in shot. It is also possible, and often advised, to train models using a large database of resources (in our case images) so that the model has a larger scope, this does often lead to overtraining and subsequently overfitting. To minimise this risk, various backgrounds can be paired with each input in order to limit this issue.
+
+IMG - selfies
+
 ### Create the model using Teachable Machine
 
+With the images as our dataset, they can be uploaded to Teachable Machine, which fortunately handles the class distinction and training procedure for us. The classes are given on the left, providing as much or as little data as you wish and assigning it to the corresponding class. After the model is trained it is simple to test due to the webcam output which will highlight where there is underfitting and overfitting. Once the model works optimally we can download the file, one for the model and the other for the labels. 
 
+IMG - Teachable Machine
 
 
 ## M2 - "Install the Dependencies"
