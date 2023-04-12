@@ -77,12 +77,40 @@ The packages required are listed below however they are also all listed within t
 > - ipykernel
 > - time
 > - numpy
+> - random
 
 
 ## M3 - "Create a Rock-Paper-Scissors Game"
 
+This milestone, which is essentially a hard coded rock-paper-scissors game is within the manual_rps.py file. It acts as a shell that we will use and modify once it is ready to be merged with the model. Please note that the exception here is the function play(), which we will get to later. 
+
 ### Get users choice and randomly generate computer's choice
+
+Fortunately the code to generate a computer choice is fairly simple, only requiring the random module. We provide the list of options (excluding none for obvious reasons) and we return a random element from the list.
+```python
+def get_computer_choice():
+    options = ["rock", "paper", "scissors"]
+    computer_selected = random.choice(options)
+    return computer_selected
+```
+
+The code to grab a users input is not perfect as we are creating the list again however as the list is only 3 elements long, this is not detrimental. This will be changed in later refinements however at the time of writing this, this is the case. It is important to notice the use of the .lower() function as we must make sure we standardise our inputs.
+
+```python
+def get_user_choice():
+    options = ["rock", "paper", "scissors"]
+    while True:
+        user_selected = input("Input: ").lower()
+        if user_selected not in options:
+            print("invalid input")
+        else:
+            break
+    return user_selected
+```
+
 ### Determine the winner
+
+
 ### Simulate the game
 
 
