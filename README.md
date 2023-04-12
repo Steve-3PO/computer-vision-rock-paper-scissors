@@ -12,3 +12,7 @@
 ### Milestone 4
 > Ignoring the model for a second, basic code was created to play a rock paper scissors game without imaging, so that the model can be inserted into the user's inputs place. Currently, the user can provide an input and the computer will make a choice, the results are compared and a winner is announced or a tie if the inputs match.
 > 
+
+### Milestone 5
+> In the final milestone, the hardcoded user input is replaced with the prediction from the model. From testing the model works majority of the time. A countdown has replaced the while loop to give the user a set amount of time to engage with the game, with the countdown being displayed on the webcam. General code cleaning, and minor optimisations are made too. 
+> Further improvements to the functionality and the code may include requiring user input to initiate the coundown, as well as moving the existing code into a class format
