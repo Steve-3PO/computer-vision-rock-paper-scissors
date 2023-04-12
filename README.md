@@ -1,10 +1,21 @@
-# Computer Vision RPS
+# Computer Vision (AiCore training): Rock, Paper, Scissors!
 
-## This project will show how a model can be trained to play Rock, Paper, Scissors with a computer using a webcam to record the user's selection. 
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors)
+
+## Overview 
+>This project will show how a model can be trained to play Rock, Paper, Scissors with a computer using a webcam to record the user's selection. 
 > The Model used can be accessed from Teachable-Machine and the download is shown in the repository under the file named keras_model.h5 with the corresponding labels in the labels.txt file.
 
+## Learning Objectives
+
+## Languages & Tools
+
+## Project Structure
+
 ### Milestone 2
-> The model was trained using over 1000+ pictures for each of the possible inpputs: Rock, Paper, Scissors and Nothing, for when there is a lack of input from the user. The model was then downloaded and imported into this repository to begin accessing it. It was tested to make sure it provided a normalised output of what is seen which is given in the form [xxx, yyy, zzz, nnn] where each value corresponds to the models assertion that the user has provided either rock, paper, scissors or none. 
+> The model was trained using over 1000+ pictures for each of the possible inputs: Rock, Paper, Scissors and Nothing, for when there is a lack of input from the user. The model was then downloaded and imported into this repository to begin accessing it. It was tested to make sure it provided a normalised output of what is seen which is given in the form [rrr, ppp, sss, nnn] where each value corresponds to the models assertion that the user has provided either rock, paper, scissors or none. 
 
 ### Milestone 3
 > Before continuing, in this milestone the appropriate packages are installed within a new Conda environment. Opencv-python, tensorflow and ipykernel were installed and the environment was put into the requirements folder so that this project can be accessed by anyone with the correct package versions.
