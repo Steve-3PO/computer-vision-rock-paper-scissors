@@ -148,3 +148,12 @@ timeout = 3
 This code will set a coundown before which the user has a chance to give an answer to the camera, more inline with the nature of the game: "rock...paper...scissors...shoot!"
 
 ### Other additions
+
+Here the project ends however, to add extra functionality to this project, an additional step was made to show a countdown on the webcam so that the user knows when to project an input. This is also more inline with the nature of the game (Rock...Paper...Scissors...Shoot!).
+
+```python
+ctd = (str((time_start + timeout) - time.time()))[:4]  
+cv2.putText(frame, ctd, (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 3)
+```
+
+By coverting the countdown into a string and only taking the first few digits, we can input this into the putText() function from the opencv-python library. This creates a basic countdown while still providing the functionality needed.
