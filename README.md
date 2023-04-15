@@ -45,13 +45,11 @@ To create our vision system we must first distinguish between the 4 different ty
 
 Although the dataset can be of just hands showering 1 of the 3 possible inputs, it was required that the model was to be trained with the user half in shot. It is also possible, and often advised, to train models using a large database of resources (in our case images) so that the model has a larger scope, this does often lead to overtraining and subsequently overfitting. To minimise this risk, various backgrounds can be paired with each input in order to limit this issue.
 
-![]()
-
 ### Create the model using Teachable Machine
 
 With the images as our dataset, they can be uploaded to Teachable Machine, which fortunately handles the class distinction and training procedure for us. The classes are given on the left, providing as much or as little data as you wish and assigning it to the corresponding class. After the model is trained it is simple to test due to the webcam output which will highlight where there is underfitting and overfitting. Once the model works optimally we can download the file, one for the model and the other for the labels. 
 
-IMG - Teachable Machine
+![rock](/images/just%20rock%20shown.png)![paper](/images/just%20paper%20shown.png)![scissors](/images/just%20scissors%20shown.png)
 
 
 ## M2 - "Install the Dependencies"
