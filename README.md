@@ -37,6 +37,8 @@
 
 To create our vision system we must first distinguish between the 4 different types of inputs that the system is required to differentiate. Rock, Paper, Scissors and None. It is important to note that none is simply the lack of any input by the user and is itself an input because of this.
 
+![image of rock paper scissors](/images/rps%20picture.png)
+
 ![image of nothing shown by user](/images/nothing%20rps%20project.png)
 
 ### Create the dataset (images) to be used in training the model
